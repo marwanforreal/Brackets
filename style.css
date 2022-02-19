@@ -139,6 +139,12 @@ section {
     text-align: center;
 }
 
+.copyrights{
+  text-align: center;
+  font-size: 0.8em;
+  margin-top:50px;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
