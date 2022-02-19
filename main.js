@@ -27,3 +27,22 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+var words = ["Are Brackets", "Design", "Create", "Maintain"];
+var textPosition = 0; 
+var speed = 100; 
+var wordIndex = 0; 
+
+typeWriter = () => {
+
+  document.querySelector("#typeWriter").innerHTML = words[wordIndex].substring(0, textPosition) + "<span>|</span>";
+
+  if(textPosition++ != words[wordIndex].length){
+      setTimeout(typeWriter, speed);
+    } else {
+      textPosition = 0; 
+      wordIndex++;
+      setTimeout(typeWriter, speed + 800);
+    } 
+}
+
+window.addEventListener("load", typeWriter);

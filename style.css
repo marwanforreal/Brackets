@@ -57,6 +57,16 @@ section {
     flex-direction: column;
 }
 
+.content h3 span span{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
 .main-btn{
     background-color:#ffffff;
     color:#14213d;
