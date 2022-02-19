@@ -34,7 +34,9 @@ var wordIndex = 0;
 
 typeWriter = () => {
 
-  document.querySelector("#typeWriter").innerHTML = words[wordIndex].substring(0, textPosition) + "<span>|</span>";
+    if(wordIndex > 3) wordIndex = 0;
+    
+    document.querySelector("#typeWriter").innerHTML = words[wordIndex].substring(0, textPosition) + "<span>|</span>";
 
   if(textPosition++ != words[wordIndex].length){
       setTimeout(typeWriter, speed);
