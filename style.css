@@ -105,7 +105,9 @@ section {
     margin-top: 5px; 
 }
 
-.info h3{
+.info a{
+    color:#e5e5e5;
+    text-decoration: none;
     display: inline-block;
 }
 
