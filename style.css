@@ -114,6 +114,9 @@ section {
 .location-icon{
   position: relative;
   bottom: 7px;
+  transform: scale(1.5);
+  margin-right: 14px;
+  margin-left: 14px;
 }
 
 .location{
