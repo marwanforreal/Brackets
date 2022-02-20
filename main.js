@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-var words = ["Are Brackets", "Design", "Create", "Maintain"];
+var words = ["Design", "Create", "Build", "Renovate"];
 var textPosition = 0; 
 var speed = 100; 
 var wordIndex = 0; 
@@ -35,7 +35,7 @@ var wordIndex = 0;
 typeWriter = () => {
 
     if(wordIndex > 3) wordIndex = 0;
-    
+
     document.querySelector("#typeWriter").innerHTML = words[wordIndex].substring(0, textPosition) + "<span>|</span>";
 
   if(textPosition++ != words[wordIndex].length){
