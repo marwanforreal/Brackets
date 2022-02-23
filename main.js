@@ -47,4 +47,9 @@ typeWriter = () => {
     } 
 }
 
+function changeButtonContent(){
+  var buttonId = document.getElementById("main-btn-content");
+  buttonId.innerHTML = "Downloading PDF....";
+}
+
 window.addEventListener("load", typeWriter);
