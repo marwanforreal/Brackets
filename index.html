@@ -6,9 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Brackets</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <section class="main">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png"/>
+            <h3 class="slogan" id="slogan">We <span id="typeWriter"></span></h3>
+        </div>
+
+        <div class="content">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                    <img src="images/img5.jpg" style="width:100%">
+                  <div class="text">Prime Ministry Fountain Courtyard</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                    <img src="images/img3.jpg" style="width:100%">
+                  <div class="text">Dr. Mohamad Laban Clinic</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                    <img src="images/img2.jpg" style="width:100%">
+                  <div class="text">Zenith Amman - St Regis</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                    <img src="images/img1.jpg" style="width:100%">
+                  <div class="text">Nommers - Dabouq District</div>
+                </div>
+              
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+
+              <a class="main-btn" href="files/bracketsPortfolio.pdf" target="_blank" download onclick="changeButtonContent()"><p id="main-btn-content">Show More</p></a>
+        </div>
+    </section>
+
+    <section class="lower">
+        <div class="contact-info">
+            <div class="info">
+                <i class="fa fa-solid fa-phone icon"></i>
+                <a href="https://wa.me/962795646489">0795646489</a>
+            </div>
+
+            <div class="info">
+                <i class="fa fa-solid fa-envelope icon"></i>
+                <a href="mailto:info@bracketsjo.com">info@bracketsjo.com</a>
+            </div>
+
+            <div class="info">
+                <!--<i class="fa fa-solid fa-road icon location-icon"></i>-->
+                <i class="fa fa-solid fa-map-pin location-icon"></i>
+                <a href="https://goo.gl/maps/AGmpCTsF6T3EzaFp6" class="location">
+                  <h5>Wasfi Tal St.</h5>
+                  <h5>Maraqa Spaces – 5th Floor</h5>
+                </a>
+            </div>
+        </div>
+
+        <div class="social-networks">
+            <a href="https://www.linkedin.com/in/brackets-jo/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bracketscontracting/"><i class="fab fa-brands fa-instagram-square"></i></a>
+            <a href="https://wa.me/962795646489"><i class="fab fa-brands fa-whatsapp-square"></i></a>
+            <a href="https://www.facebook.com/Bracketsjo"><i class="fab fa-brands fa-facebook-square"></i></a>
+        </div>
+
+        <div class="copyrights">
+            <p>Copyrights © 2022 <a href="http://marwan.live" target="_blank">MK</a></p>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
