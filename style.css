@@ -144,6 +144,13 @@ section {
   font-size: 0.8em;
   position: relative;
   top: 8px;
+  color: #14213d;
+}
+
+.copyrights a{
+  text-decoration: none;
+  font-weight: 800;
+  color: #14213d;
 }
 
 * {box-sizing:border-box}
