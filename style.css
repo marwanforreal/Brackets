@@ -244,3 +244,34 @@ section {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+@media(min-width: 900px){
+  .main{
+    display: flex; 
+    flex-direction: row;
+    padding: 65px 50px;
+  }
+  .logo{
+    height: 50%;
+    width: 50%;
+  }
+
+  .info{
+    width: 30%;
+    margin: 5px auto auto auto;
+  }
+
+  .main-btn{
+    width: 30%;
+  }
+
+  .main h3{
+    color:#BBCDE5;
+    font-size: 1.6em;
+  }
+
+  .lower{
+    border-radius: 0 0 0 0;
+  }
+}
